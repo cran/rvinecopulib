@@ -3,6 +3,7 @@
 \name{as_rvine_structure}
 \alias{as_rvine_structure}
 \alias{as_rvine_matrix}
+\alias{as_rvine_matrix}
 \alias{as_rvine_structure.rvine_structure}
 \alias{as_rvine_matrix.rvine_structure}
 \alias{as_rvine_structure.list}

@@ -10,6 +10,9 @@
 \alias{pbicop_dist}
 \alias{rbicop_dist}
 \alias{hbicop_dist}
+\alias{pbicop}
+\alias{rbicop}
+\alias{hbicop}
 \title{Bivariate copula distributions}
 \usage{
 dbicop(u, family, rotation, parameters)
