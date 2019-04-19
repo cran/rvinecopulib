@@ -8,8 +8,6 @@
 \alias{dvine_dist}
 \alias{pvine_dist}
 \alias{rvine_dist}
-\alias{pvine}
-\alias{rvine}
 \title{Vine based distributions}
 \usage{
 dvine(x, vine, cores = 1)

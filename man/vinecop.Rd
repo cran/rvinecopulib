@@ -3,7 +3,6 @@
 \name{vinecop}
 \alias{vinecop}
 \alias{vinecop_dist}
-\alias{vinecop_dist}
 \title{Vine copula models}
 \usage{
 vinecop(data, family_set = "all", structure = NA, par_method = "mle",
@@ -24,11 +23,8 @@ additional options.}
 \item{structure}{an \code{rvine_structure} object, namely a compressed
 representation of the vine structure, or an object that can be coerced
 into one (see \code{\link[=rvine_structure]{rvine_structure()}} and \code{\link[=as_rvine_structure]{as_rvine_structure()}}).
-The dimension must be \code{length(pair_copulas[[1]]) + 1}; for [vinecop()],
-\code{structure = NA} performs automatic structure selection.
-
-[[1]: R:[1
-[vinecop()]: R:vinecop()}
+The dimension must be \code{length(pair_copulas[[1]]) + 1}; for \code{\link[=vinecop]{vinecop()}},
+\code{structure = NA} performs automatic structure selection.}
 
 \item{par_method}{the estimation method for parametric models, either \code{"mle"}
 for maximum likelihood or \code{"itau"} for inversion of Kendall's tau (only

@@ -13,7 +13,9 @@
 #'   * `xmax` numeric vector of length d; see [kde1d::kde1d()].
 #'   * `bw` numeric vector of length d; see [kde1d::kde1d()].
 #' @param copula_controls a list with arguments to be passed to [vinecop()].
-#' 
+#' @param keep_data whether the original data should be stored; if you want to 
+#'   store the pseudo-observations used for fitting the copula, use the 
+#'   `copula_controls` argument.
 #' @details
 #' `vine_dist()` creates a vine copula by specifying the margins, a nested list 
 #' of `bicop_dist` objects and a quadratic structure matrix. 
@@ -39,7 +41,7 @@
 #' * `copula_controls`, a `list` with the set of fit controls that was passed 
 #' to [vinecop()] when estimating the copula.
 #' * `data` (optionally, if `keep_data = TRUE` was used), the dataset that was 
-#' passed to [vinecop()].
+#' passed to [vine()].
 #' * `nobs`, an `integer` containing the number of observations that was used 
 #' to fit the model.
 #' 
@@ -95,7 +97,8 @@ vine <- function(data,
                                      threshold = 0, 
                                      keep_data = FALSE,
                                      show_trace = FALSE, 
-                                     cores = 1)) {
+                                     cores = 1),
+                 keep_data = FALSE) {
     
     ## continuous convolution
     data_cc <- cont_conv(data)
@@ -111,31 +114,23 @@ vine <- function(data,
     
     ## expand the required arguments and compute default mult if needed
     margins_controls <- expand_margin_controls(margins_controls, d, data)
-    
+
     ## estimation of the marginals
     vine <- list()
     vine$margins <- lapply(1:d, function(k) kde1d(data_cc[, k],
-                                               xmin = margins_controls$xmin[k], 
-                                               xmax = margins_controls$xmax[k],
-                                               bw = margins_controls$bw[k],
-                                               mult = margins_controls$mult))
+                                                  xmin = margins_controls$xmin[k], 
+                                                  xmax = margins_controls$xmax[k],
+                                                  bw = margins_controls$bw[k],
+                                                  mult = margins_controls$mult))
     vine$margins_controls <- margins_controls
-    
+
     ## estimation of the R-vine copula (only if d > 1)
     if (d > 1) {
         ## transform to copula data
         copula_controls$data <- sapply(1:d, function(k) pkde1d(data_cc[, k],
-                                                            vine$margins[[k]]))
-        
-        ## to avoid saving copula data
-        keep_data <- copula_controls$keep_data
-        copula_controls$keep_data <- FALSE
-        
+                                                               vine$margins[[k]]))
         ## estimate the copula
-        vine$copula  <- do.call(vinecop, copula_controls)
-        
-        ## to potentially save the data on the standard scale
-        copula_controls$keep_data <- keep_data
+        vine$copula <- do.call(vinecop, copula_controls)
     }
     vine$copula_controls <- copula_controls[-which(names(copula_controls) == "data")]
     
@@ -191,24 +186,17 @@ vine_dist <- function(margins, pair_copulas, structure) {
                    loglik = NA), class = "vine_dist")
 }
 
-expand_margin_controls <- function(margins_controls, d, data) {
-    margins_controls_names <- names(margins_controls)
-    margins_controls <- sapply(seq_along(margins_controls), function(j) {
-        par <- margins_controls[[j]]
-        if (names(margins_controls)[j] == "mult") {
-            if (is.null(par)) 
-                par <- log(1 + d)
-        } else {
-            par <- expand_vec(par, data)
-        }
-        return(par)
-    })
-    names(margins_controls) <- margins_controls_names
-    return(margins_controls)
+expand_margin_controls <- function(controls, d, data) {
+    default_controls <- list(mult = NULL, xmin = NaN, xmax = NaN, bw = NA)
+    controls <- modifyList(default_controls, controls)
+    if (is.null(controls[["mult"]])) 
+        controls[["mult"]] <- log(1 + d)
+    for (par in setdiff(names(controls), "mult"))
+        controls[[par]] <- expand_vec(controls[[par]], data)
+    controls
 }
 
 finalize_vine <- function(vine, data, keep_data) {
-    
     ## compute npars/loglik and adjust margins for discrete data and 
     npars <- loglik <- 0
     for (k in seq_len(ncol(data))) {

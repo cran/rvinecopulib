@@ -116,7 +116,7 @@ vinecop <- function(data, family_set = "all", structure = NA,
     )
     
     # check if families known (w/ partial matching) and expand convenience defs
-    family_set <- process_family_set(family_set)
+    family_set <- process_family_set(family_set, par_method)
     
     ## pre-process input
     data <- if_vec_to_matrix(data)
@@ -197,6 +197,10 @@ vinecop_dist <- function(pair_copulas, structure) {
     
     # sanity checks
     assert_that(is.list(pair_copulas))
+    if (length(pair_copulas) > length(pair_copulas[[1]])) {
+        stop("'pair_copulas' has more trees than variables.")
+    }
+
     pc_lst <- unlist(pair_copulas, recursive = FALSE)
     if (!all(sapply(pc_lst, function(x) inherits(x, "bicop_dist")))) {
         stop("some objects in pair_copulas aren't of class 'bicop_dist'")

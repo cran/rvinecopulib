@@ -4,13 +4,13 @@
 \alias{vine_predict_and_fitted}
 \alias{predict.vine}
 \alias{fitted.vine}
-\alias{fitted.vine}
 \title{Predictions and fitted values for a vine copula model}
 \usage{
 \method{predict}{vine}(object, newdata, what = "pdf", n_mc = 10^4,
   cores = 1, ...)
 
-\method{fitted}{vine}(object, what = "pdf", n_mc = 10^4, cores = 1, ...)
+\method{fitted}{vine}(object, what = "pdf", n_mc = 10^4, cores = 1,
+  ...)
 }
 \arguments{
 \item{object}{a \code{vine} object.}
@@ -37,6 +37,6 @@ for a vine copula model.
 }
 \examples{
 x <- sapply(1:5, function(i) rnorm(50))
-fit <- vine(x, copula_controls = list(family_set = "par"))
+fit <- vine(x, copula_controls = list(family_set = "par"), keep_data = TRUE)
 all.equal(predict(fit, x), fitted(fit))
 }

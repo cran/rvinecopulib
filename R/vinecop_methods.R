@@ -193,8 +193,8 @@ logLik.vinecop <- function(object, ...) {
 #' 
 #' The modified vine copula Bayesian information criterion (mBICv) is defined as
 #' 
-#' \deqn{\mathrm{BIC} = -2\, \mathrm{loglik} +  \nu \log(n) - 2 * 
-#' \sum_{t=1}^{d - 1} \{q_t \log(\psi_0^t) - (d - t - q_t) \log(1 - \psi_0^t)\}
+#' \deqn{BIC = -2 loglik +  \nu log(n) - 2  
+#' \sum_{t=1}^{d - 1} (q_t log(\psi_0^t) - (d - t - q_t) log(1 - \psi_0^t))
 #' }
 #' 
 #' where \eqn{\mathrm{loglik}} is the log-likelihood and \eqn{\nu} is the
@@ -207,6 +207,13 @@ logLik.vinecop <- function(object, ...) {
 #' @param object a fitted `vinecop` object.
 #' @param psi0 baseline prior probability of a non-independence copula.
 #' @param newdata optional; a new data set.
+#' 
+#' @references Nagler, T., Bumann, C., Czado, C. (2019). 
+#' Model selection for sparse high-dimensional vine copulas with application 
+#' to portfolio risk.
+#' *Journal of Multivariate Analysis, in press* 
+#' (\url{https://arxiv.org/pdf/1801.09739.pdf})
+#' 
 #' @export mBICV
 #' @examples
 #' u <- sapply(1:5, function(i) runif(50))
@@ -228,7 +235,9 @@ compute_mBICV_penalty <- function(object, psi0) {
     q_m <- c(q_m, rep(0, d - 1 - length(q_m)))
     m_seq <- seq_len(d - 1)
     pen <- object$npars * log(object$nobs)
-    pen - 2 * sum(q_m * log(psi0^m_seq) + (d - 1 - q_m) * log(1 - psi0^m_seq))
+    pen - 2 * sum(
+        q_m * log(psi0^m_seq) + (d - seq_len(d - 1) - q_m) * log(1 - psi0^m_seq)
+    )
 }
 
 #' @export
