@@ -1,4 +1,4 @@
-081df6731522f3550a1625c1d2f5a9f8 *DESCRIPTION
+532e2f3d1524e01c2a3a9aa192fdb5d6 *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 aac12c1bd771c7de6d75c9b793740c68 *NAMESPACE
 1ce40ea679eefa45b57a87b4400e6534 *NEWS.md
@@ -18,7 +18,7 @@ ad97018d7344a5648a482e4f402fa460 *R/tools.R
 c14d6ad1c9a7f35f05110340b228266b *R/vine.R
 daed745bd2141e79812f41e85faf0cf0 *R/vine_methods.R
 b4e97f28d6eecfc685a65cc8a7aea3f1 *R/vinecop.R
-3c3ac4212519de3e4c9988da3f71b855 *R/vinecop_methods.R
+94081d98de3d19869cb347aa73bd119d *R/vinecop_methods.R
 040abcab55c51c7d55095fcf339a4214 *R/vinecop_plot.R
 ca27ca9fbfc32cd76f8e8f0f436faead *README.md
 623dd94066b338d83f3b1fa37d55b352 *inst/include/version.hpp
