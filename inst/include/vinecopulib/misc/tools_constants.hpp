@@ -6,8 +6,11 @@
 
 #pragma once
 
-#include <vinecopulib/bicop/class.hpp>
-#include <vinecopulib/misc/tools_stats.hpp>
-#include <vinecopulib/vinecop/class.hpp>
-#include <vinecopulib/misc/tools_stats.hpp>
-#include <wdm/eigen.hpp>
+#include <boost/math/constants/constants.hpp>
+
+namespace vinecopulib {
+
+namespace constant {
+constexpr double pi = 3.141592653589793238462643383279502884;
+}
+}
