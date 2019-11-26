@@ -1,7 +1,7 @@
-868ae0b6a7d60be1c8aa155e06e09a2e *DESCRIPTION
+52559d7c66ff8e536519c05a0c7a91fb *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 24488183b37d6ec7be9317539b67780b *NAMESPACE
-bc216967b070e60256e54d0a36b79eb6 *NEWS.md
+6faed0330030a14c31d5fe3f9dcc84cf *NEWS.md
 0a22a761ca08613b3577382f5fff618d *R/RcppExports.R
 ecb76b73658bac7e2fade41f5d059e65 *R/as_rvine_structure.R
 58c5eca71a1864f6370eb16c43f102f3 *R/bicop.R
@@ -57,7 +57,7 @@ c252a15dd006d033416e178913e1c801 *inst/include/vinecopulib/bicop/implementation/
 454cc62f169533f1f632a96ed887933a *inst/include/vinecopulib/bicop/implementation/kernel.ipp
 381c910be769148d0c33d8e3d62c10b1 *inst/include/vinecopulib/bicop/implementation/parametric.ipp
 3a482cf8e1773d5f85e8efee47995a64 *inst/include/vinecopulib/bicop/implementation/student.ipp
-db449a83ad5676d9171526ac030801cc *inst/include/vinecopulib/bicop/implementation/tll.ipp
+eccdfe1787dc49023c15dee1ac4acd56 *inst/include/vinecopulib/bicop/implementation/tll.ipp
 b79df5c1be7fb2abe7b7a8aa5f9daa0d *inst/include/vinecopulib/bicop/implementation/tools_select.ipp
 7a3ba2bd3a3b02545121a72147470fd6 *inst/include/vinecopulib/bicop/indep.hpp
 c76e430ed00b241824ee16f595c1708d *inst/include/vinecopulib/bicop/joe.hpp
@@ -122,7 +122,7 @@ b78fac54e5fa13d10c1bc930e603bf98 *man/vinecop.Rd
 012251c3ddd9c9262c7e497cfd31a66e *src/Makevars
 68bc0e024c58355fbf5f79a7accf726c *src/Makevars.win
 40de3b2260e8640473aa7a9b09193e22 *src/RcppExports.cpp
-105518beb14bbf4f9190976d934dde57 *src/vinecopulib-interface.cpp
+5b9a1dd96852f98fa45c93147c90bd43 *src/vinecopulib-interface.cpp
 3e02a650514d6f9e480808628006acb4 *tests/testthat.R
 415a0b8217e812eeff76b3d99464ed74 *tests/testthat/Rplots.pdf
 59eaff8e0adb84edddf0dd328f1695a8 *tests/testthat/test_bicop.R
