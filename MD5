@@ -1,7 +1,7 @@
-7c4fb7e76117e9045b4d4a539b2737fd *DESCRIPTION
+97d355006ab41fa24fb0211319ec27c0 *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 c7eaf30ecd6292b26b571f283ac677a4 *NAMESPACE
-c1959e8610b4c8d67302fc495bf9b5d4 *NEWS.md
+dd97df67afe91a1f63fc8ac52a82127c *NEWS.md
 0a22a761ca08613b3577382f5fff618d *R/RcppExports.R
 44a2a2143b6e7be94bd5eb756cd855a9 *R/as_rvine_structure.R
 9dfa839311bebd9c5d617fb5095bce46 *R/bicop.R
@@ -12,7 +12,7 @@ cb3403dce9bd3ce19710f1e399241f7f *R/getters.R
 2c17c8c67deeeb123a354d1db42cb78f *R/pairs_copula_data.R
 3bc1767ac25c4b5381f2aa1543e96ce9 *R/rosenblatt.R
 d98cab407a754f721fb512da1325cb3a *R/rvine_structure.R
-37e49159259e28964347caa603f40c14 *R/rvinecopulib.R
+a7da2dafaf13da878723b8f2a15952ed *R/rvinecopulib.R
 a650b028712ed8aa5b9f06d4a4085e9e *R/tools.R
 c94a5973ab3862bb1e3365a99832e66f *R/truncate_model.R
 6f4bbf371152da7d548f240d6d8515ae *R/vine.R
@@ -30,7 +30,7 @@ e254503056d2b198b3fe82fca86061e3 *inst/include/vinecopulib/bicop/abstract.hpp
 49a87641b887780f67f738a773cf5ec8 *inst/include/vinecopulib/bicop/bb6.hpp
 54323d03cde4b462f7f2da47e37ffa76 *inst/include/vinecopulib/bicop/bb7.hpp
 880012d0b98cdc23463ff596080b7ac3 *inst/include/vinecopulib/bicop/bb8.hpp
-6c56e2916dd9083c0b3e1841a267816a *inst/include/vinecopulib/bicop/class.hpp
+2306fb48347acbd35a8814518d4bb23b *inst/include/vinecopulib/bicop/class.hpp
 04c5848ddab1f2300f6fdae6b2502d2f *inst/include/vinecopulib/bicop/clayton.hpp
 9d4256025890b4dd621ed748eb55158f *inst/include/vinecopulib/bicop/elliptical.hpp
 e507e4436ae0b1508630703ee0798837 *inst/include/vinecopulib/bicop/family.hpp
@@ -42,9 +42,9 @@ c2e8ef6e6b589c673473cc983a0b75af *inst/include/vinecopulib/bicop/implementation/
 330d142cf96688953428da255cd307ad *inst/include/vinecopulib/bicop/implementation/archimedean.ipp
 76e5b1e7b7537ff0e9b4338dc0a79c3b *inst/include/vinecopulib/bicop/implementation/bb1.ipp
 4e1b7f0d74bda0d027f64ef4648e968d *inst/include/vinecopulib/bicop/implementation/bb6.ipp
-0d50ee0bd371ff3c0a30d1b5ebe08e4c *inst/include/vinecopulib/bicop/implementation/bb7.ipp
+8001a3f7c41953a612853305492b151d *inst/include/vinecopulib/bicop/implementation/bb7.ipp
 b29e80f7b5d64cbcee3fbb51a0bfb4ce *inst/include/vinecopulib/bicop/implementation/bb8.ipp
-25d968fd2a660f071444591b061cba43 *inst/include/vinecopulib/bicop/implementation/class.ipp
+ca27865901bb108d0a253b65013f8c31 *inst/include/vinecopulib/bicop/implementation/class.ipp
 3264e3ac0408285cd4140b05ef4222c0 *inst/include/vinecopulib/bicop/implementation/clayton.ipp
 0e5a236de84db795c25972b4051ec6a4 *inst/include/vinecopulib/bicop/implementation/elliptical.ipp
 a31c3a98b04a2eaae83c53cf08a95d38 *inst/include/vinecopulib/bicop/implementation/family.ipp
@@ -88,10 +88,10 @@ bf051d258323d6d40a9b9a99cdd4cd93 *inst/include/vinecopulib/misc/tools_stats_sobo
 770d8d224bbbb3f354c1c81d52829262 *inst/include/vinecopulib/version.hpp
 4912b2224e388b4d2be2843a042fcfe3 *inst/include/vinecopulib/vinecop/class.hpp
 3485223db32bbe96640451f2cd8af160 *inst/include/vinecopulib/vinecop/fit_controls.hpp
-57136a926d97b9186a22234b7dd9404e *inst/include/vinecopulib/vinecop/implementation/class.ipp
-7b35b56dbcdd57fb4b07dfcee0dec6dc *inst/include/vinecopulib/vinecop/implementation/fit_controls.ipp
+518adc95d2889330423a053d3f30769e *inst/include/vinecopulib/vinecop/implementation/class.ipp
+de0d4be11a2ed1d0389a373de8dd2b5f *inst/include/vinecopulib/vinecop/implementation/fit_controls.ipp
 cf223f0d9d34e7e6f2cbc1fdfdd1c1e5 *inst/include/vinecopulib/vinecop/implementation/rvine_structure.ipp
-f2cad4c50b7abb4734615a1ac1bbe277 *inst/include/vinecopulib/vinecop/implementation/tools_select.ipp
+5e490c59e709368708a1b94755659a07 *inst/include/vinecopulib/vinecop/implementation/tools_select.ipp
 ddce51da5b7e8ec60770e8d8c20d5db0 *inst/include/vinecopulib/vinecop/rvine_structure.hpp
 8aa713fdb8b83905a9d4c3624eb812ca *inst/include/vinecopulib/vinecop/tools_select.hpp
 45123459f29ffa3810a1d99e67e1f0c7 *man/as_rvine_structure.Rd
@@ -112,7 +112,7 @@ a4466b4327583299e49400b88e775613 *man/pseudo_obs.Rd
 24d22ee595f35c2369e0fad9d1e7b64e *man/rosenblatt.Rd
 8c23323b10a43c02777186be80e8cfca *man/rvine_structure.Rd
 82be4d8a8fe98b79968d4691777cfa0f *man/rvine_structure_sim.Rd
-075d1cc5aa998d6df73f7e08846e382d *man/rvinecopulib.Rd
+159d6c2f145dc8002595e1b7ef350e1c *man/rvinecopulib.Rd
 717cea2e44a750b4bf1406b201a3103c *man/truncate_model.Rd
 e1d743a9e36ad56ecf3828a90bf47791 *man/vine.Rd
 184a0cfafaab5df59b096c380cc45ef6 *man/vine_methods.Rd
@@ -124,7 +124,7 @@ a0c2377a74d450f3d87627ccac5856c1 *man/vinecop.Rd
 40de3b2260e8640473aa7a9b09193e22 *src/RcppExports.cpp
 4c9457f2f37a69166984c3a40d5e8fda *src/vinecopulib-interface.cpp
 3e02a650514d6f9e480808628006acb4 *tests/testthat.R
-57942e4532956ea26d55f4a8499c0c2f *tests/testthat/Rplots.pdf
+5ca6992a8704e80f1c32c03652cbd105 *tests/testthat/Rplots.pdf
 3cd65c5c0a2d37123d14555e77b39504 *tests/testthat/test_bicop.R
 bc7726fb3c49050bb8face97d0e6e876 *tests/testthat/test_bicop_dist.R
 b1f296da3b1ae225504bd87995a3aa17 *tests/testthat/test_discrete.R
