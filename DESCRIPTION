@@ -1,7 +1,7 @@
 Package: rvinecopulib
 Type: Package
 Title: High Performance Algorithms for Vine Copula Modeling
-Version: 0.5.5.1.0
+Version: 0.5.5.1.1
 Authors@R: c(
         person("Thomas", "Nagler",, "info@vinecopulib.org", role = c("aut", "cre")),
         person("Thibault", "Vatter",, "info@vinecopulib.org", role = c("aut"))
@@ -28,9 +28,9 @@ LinkingTo: BH, Rcpp, RcppEigen, RcppThread, wdm, kde1d
 BugReports: https://github.com/vinecopulib/rvinecopulib/issues
 SystemRequirements: C++11
 RoxygenNote: 7.1.1
-Packaged: 2020-11-23 19:16:10 UTC; n5
+Packaged: 2021-01-05 11:11:35 UTC; n5
 Author: Thomas Nagler [aut, cre],
   Thibault Vatter [aut]
 Maintainer: Thomas Nagler <info@vinecopulib.org>
 Repository: CRAN
-Date/Publication: 2020-11-23 20:10:02 UTC
+Date/Publication: 2021-01-06 16:00:12 UTC
