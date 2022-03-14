@@ -1,7 +1,7 @@
 Package: rvinecopulib
 Type: Package
 Title: High Performance Algorithms for Vine Copula Modeling
-Version: 0.6.1.1.1
+Version: 0.6.1.1.2
 Authors@R: c(
         person("Thomas", "Nagler",, "info@vinecopulib.org", role = c("aut", "cre")),
         person("Thibault", "Vatter",, "info@vinecopulib.org", role = c("aut"))
@@ -20,16 +20,17 @@ Description: Provides an interface to 'vinecopulib', a C++ library for vine
 License: GPL-3 | file LICENSE
 Encoding: UTF-8
 NeedsCompilation: yes
+Depends: R (>= 3.0.2)
 Imports: assertthat, graphics, grDevices, kde1d (>= 1.0.2), lattice,
         Rcpp (>= 0.12.12), stats, utils
 Suggests: igraph, ggplot2, ggraph, testthat
-LinkingTo: BH, Rcpp, RcppEigen, RcppThread, wdm, kde1d
+LinkingTo: BH, Rcpp, RcppEigen, RcppThread (>= 2.1.2), wdm, kde1d
 BugReports: https://github.com/vinecopulib/rvinecopulib/issues
 SystemRequirements: C++11
 RoxygenNote: 7.1.1
-Packaged: 2021-10-07 09:46:29 UTC; n5
+Packaged: 2022-03-14 14:27:02 UTC; n5
 Author: Thomas Nagler [aut, cre],
   Thibault Vatter [aut]
 Maintainer: Thomas Nagler <info@vinecopulib.org>
 Repository: CRAN
-Date/Publication: 2021-10-07 10:20:02 UTC
+Date/Publication: 2022-03-14 16:00:02 UTC
