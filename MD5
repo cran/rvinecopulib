@@ -1,7 +1,7 @@
-abb053d6c2cfeb30e889949d0f85df82 *DESCRIPTION
+833bb3b769c0865a2ec1dac254a7c336 *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 c7eaf30ecd6292b26b571f283ac677a4 *NAMESPACE
-4a65b88260a3857af91fb5140b63688c *NEWS.md
+77f3f6355934b5eeb9ba69f9a7b02cfd *NEWS.md
 0a22a761ca08613b3577382f5fff618d *R/RcppExports.R
 44a2a2143b6e7be94bd5eb756cd855a9 *R/as_rvine_structure.R
 2ef55606108b429ee697c0225590aed5 *R/bicop.R
@@ -20,7 +20,7 @@ c94a5973ab3862bb1e3365a99832e66f *R/truncate_model.R
 bf79f35838d3a623b0b650e4576b2f26 *R/vinecop.R
 1ded49b78486112fcb5637176c677f23 *R/vinecop_methods.R
 5a6fb39220eb5e8084718b8028ffe6b7 *R/vinecop_plot.R
-40c6bb4a3b6e953de66f4ee9263be0dd *README.md
+b836886ebb6423ce505037fa13fcf733 *README.md
 9b456de4d14e7b7711516f81b3b25d50 *inst/include/vinecopulib-version.hpp
 2a3df8745497e0a55b4659c14b76e371 *inst/include/vinecopulib-wrappers.hpp
 9cf787ae8cc5f20859f57d9b16d071c7 *inst/include/vinecopulib.hpp
@@ -70,7 +70,7 @@ bf0822e40324f2e73cb5c970cf928588 *inst/include/vinecopulib/bicop/student.hpp
 e3e8598be855f7bded9f04217f6b65a2 *inst/include/vinecopulib/misc/implementation/tools_interpolation.ipp
 cb15553dbd43457fe08af29d2c4b8c0d *inst/include/vinecopulib/misc/implementation/tools_optimization.ipp
 9d5c87fcff01def1d9d6b5d06758e3ba *inst/include/vinecopulib/misc/implementation/tools_stats.ipp
-efaa13fffb9f0e7b8b4c396e1f873833 *inst/include/vinecopulib/misc/nlohmann_json.hpp
+c1c5a8b743c5929c1d177b6f6ca34647 *inst/include/vinecopulib/misc/nlohmann_json.hpp
 bbc4c5c2a8aaa9f7cea8b759e4fdc6f9 *inst/include/vinecopulib/misc/tools_batch.hpp
 d47df67ecc549376e79a531f0c8da888 *inst/include/vinecopulib/misc/tools_bobyqa.hpp
 f5a5e670e7f9868e93215193c513a56b *inst/include/vinecopulib/misc/tools_constants.hpp
