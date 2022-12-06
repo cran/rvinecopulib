@@ -1,7 +1,7 @@
-833bb3b769c0865a2ec1dac254a7c336 *DESCRIPTION
+cb134bb238d20298180b4b245b7bdfeb *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 c7eaf30ecd6292b26b571f283ac677a4 *NAMESPACE
-77f3f6355934b5eeb9ba69f9a7b02cfd *NEWS.md
+af2653aceb43274cb6e28e271b7ee46b *NEWS.md
 0a22a761ca08613b3577382f5fff618d *R/RcppExports.R
 44a2a2143b6e7be94bd5eb756cd855a9 *R/as_rvine_structure.R
 2ef55606108b429ee697c0225590aed5 *R/bicop.R
@@ -15,14 +15,14 @@ d98cab407a754f721fb512da1325cb3a *R/rvine_structure.R
 266686c3220d99052fabc6db1ae6a1b7 *R/rvinecopulib.R
 c34cbf693e0bef82eef490bb813e56ae *R/tools.R
 c94a5973ab3862bb1e3365a99832e66f *R/truncate_model.R
-28258f841cb273a38728ace9c592183e *R/vine.R
+b5fbf2dd609793ef46d9edd0e4ed0576 *R/vine.R
 9f383f584e7af6d634326cb20cd48e3d *R/vine_methods.R
 bf79f35838d3a623b0b650e4576b2f26 *R/vinecop.R
 1ded49b78486112fcb5637176c677f23 *R/vinecop_methods.R
 5a6fb39220eb5e8084718b8028ffe6b7 *R/vinecop_plot.R
-b836886ebb6423ce505037fa13fcf733 *README.md
+037945a2121879db770e59e2a914afcf *README.md
 9b456de4d14e7b7711516f81b3b25d50 *inst/include/vinecopulib-version.hpp
-2a3df8745497e0a55b4659c14b76e371 *inst/include/vinecopulib-wrappers.hpp
+8f586152b6b355140faaa3348e0427e2 *inst/include/vinecopulib-wrappers.hpp
 9cf787ae8cc5f20859f57d9b16d071c7 *inst/include/vinecopulib.hpp
 110a1ffdfc3f57ad9344f8d327972511 *inst/include/vinecopulib/bicop/abstract.hpp
 cf8d3bff459e844f6e29fd256aac7192 *inst/include/vinecopulib/bicop/archimedean.hpp
@@ -75,7 +75,7 @@ bbc4c5c2a8aaa9f7cea8b759e4fdc6f9 *inst/include/vinecopulib/misc/tools_batch.hpp
 d47df67ecc549376e79a531f0c8da888 *inst/include/vinecopulib/misc/tools_bobyqa.hpp
 f5a5e670e7f9868e93215193c513a56b *inst/include/vinecopulib/misc/tools_constants.hpp
 96686769aa0cd91ad56ee936f9f85986 *inst/include/vinecopulib/misc/tools_eigen.hpp
-f58dc1b49ed072e2d76de596ead7c913 *inst/include/vinecopulib/misc/tools_integration.hpp
+d99e9c8f64972203c9fa8a7c846da6f5 *inst/include/vinecopulib/misc/tools_integration.hpp
 de692b282804d6844cf8fa2891fadea1 *inst/include/vinecopulib/misc/tools_interface.hpp
 6bb2b22fcfd5c0f1f4e13d0ed4eefb05 *inst/include/vinecopulib/misc/tools_interpolation.hpp
 d7e78a547d0416a5a6cbc8db88e3f046 *inst/include/vinecopulib/misc/tools_optimization.hpp
@@ -125,7 +125,7 @@ deacf7a179c7ffd0247bb04529a7c7e1 *man/vinecop.Rd
 ddb6de7108f6d3c4a61637cf8dd1899d *src/RcppExports.cpp
 4c9457f2f37a69166984c3a40d5e8fda *src/vinecopulib-interface.cpp
 103897ba40d9c15164a0917d024e14f7 *tests/testthat.R
-e0da121f21c08992e451ff94a2a5cbc1 *tests/testthat/Rplots.pdf
+2f90e15f31995ce32392fd2940e34ca6 *tests/testthat/Rplots.pdf
 712a4ccba39f53aa4bf84472ce38a5ec *tests/testthat/test_bicop.R
 2279d829aee84766fed8d4ec71cd3047 *tests/testthat/test_bicop_dist.R
 ff3172d05e4cadddf44a0c52829191dd *tests/testthat/test_discrete.R
