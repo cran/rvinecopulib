@@ -1,7 +1,7 @@
 Package: rvinecopulib
 Type: Package
 Title: High Performance Algorithms for Vine Copula Modeling
-Version: 0.6.3.1.0
+Version: 0.6.3.1.1
 Authors@R: c(
         person("Thomas", "Nagler",, "info@vinecopulib.org", role = c("aut", "cre")),
         person("Thibault", "Vatter",, "info@vinecopulib.org", role = c("aut"))
@@ -27,9 +27,9 @@ Suggests: igraph, ggplot2, ggraph, testthat
 LinkingTo: BH, Rcpp, RcppEigen, RcppThread (>= 2.1.2), wdm, kde1d
 BugReports: https://github.com/vinecopulib/rvinecopulib/issues
 RoxygenNote: 7.2.0
-Packaged: 2023-02-20 15:13:10 UTC; n5
+Packaged: 2023-02-21 12:50:11 UTC; n5
 Author: Thomas Nagler [aut, cre],
   Thibault Vatter [aut]
 Maintainer: Thomas Nagler <info@vinecopulib.org>
 Repository: CRAN
-Date/Publication: 2023-02-20 15:40:02 UTC
+Date/Publication: 2023-02-23 11:50:02 UTC

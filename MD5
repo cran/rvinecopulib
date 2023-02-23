@@ -1,7 +1,7 @@
-e056529ea9c2f9fcd4747a34c48e2d73 *DESCRIPTION
+b8d4c9d0b4549088029a141fe38f6b21 *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 09ac17aa3b1a695e5a36fd92cfcd596a *NAMESPACE
-329557c4ae90af5258dccc1112b1eaba *NEWS.md
+89f234a667512fc58cbe8c24591775d8 *NEWS.md
 0a22a761ca08613b3577382f5fff618d *R/RcppExports.R
 44a2a2143b6e7be94bd5eb756cd855a9 *R/as_rvine_structure.R
 2ef55606108b429ee697c0225590aed5 *R/bicop.R
@@ -121,8 +121,8 @@ ba917245e9e5f6247bac940dcafb570c *man/rvinecopulib.Rd
 deacf7a179c7ffd0247bb04529a7c7e1 *man/vinecop.Rd
 2af19206e384dda0cdfd087ec20809b8 *man/vinecop_dist.Rd
 242af08a403accc9b0833fec89b890b2 *man/vinecop_methods.Rd
-872f60ba14ebce72e53b3c4c7d514cfd *src/Makevars
-f9813407d6b7e6ec0ec550da0565e222 *src/Makevars.win
+e87f6a42f8caf9c2931302f90abd4552 *src/Makevars
+e5667d918171f810081d21665b0baa63 *src/Makevars.win
 ddb6de7108f6d3c4a61637cf8dd1899d *src/RcppExports.cpp
 4c9457f2f37a69166984c3a40d5e8fda *src/vinecopulib-interface.cpp
 103897ba40d9c15164a0917d024e14f7 *tests/testthat.R
