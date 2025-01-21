@@ -6,12 +6,10 @@
 
 #pragma once
 
-#include <vinecopulib/bicop/parametric.hpp>
-#include <vinecopulib/misc/tools_constants.hpp>
+#include <vinecopulib/bicop/extreme_value.hpp>
 
 namespace vinecopulib {
-
-//! @brief An abstract class for elliptical copula families.
+//! @brief The Tawn copula.
 //!
 //! This class is used in the implementation underlying the Bicop class.
 //! Users should not use AbstractBicop or derived classes directly, but
@@ -19,17 +17,26 @@ namespace vinecopulib {
 //!
 //! @literature
 //! Joe, Harry. Dependence modeling with copulas. CRC Press, 2014.
-class EllipticalBicop : public ParBicop
+class TawnBicop : public ExtremeValueBicop
 {
+public:
+  // constructor
+  TawnBicop();
+
 private:
-  // hfunction and its inverse
-  Eigen::VectorXd hfunc2_raw(const Eigen::MatrixXd& u);
+  // pickands dependence functions and its derivatives
+  double pickands(const double& t) override;
 
-  Eigen::VectorXd hinv2_raw(const Eigen::MatrixXd& u);
+  double pickands_derivative(const double& t) override;
 
-  // link between Kendall's tau and the par_bicop parameter
-  double parameters_to_tau(const Eigen::MatrixXd& parameters);
+  double pickands_derivative2(const double& t) override;
+
+  Eigen::MatrixXd tau_to_parameters(const double& tau) override;
+
+  Eigen::VectorXd get_start_parameters(const double) override;
+
+  void flip() override;
 };
 }
 
-#include <vinecopulib/bicop/implementation/elliptical.ipp>
+#include <vinecopulib/bicop/implementation/tawn.ipp>
