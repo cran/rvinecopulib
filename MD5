@@ -1,7 +1,7 @@
-0658dfb7aa21b13db73eac9e71f3dc09 *DESCRIPTION
+7d648dc8f29cf2e12299a9165f61357e *DESCRIPTION
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 419937fd3623086d5f5192edd22d1947 *NAMESPACE
-65227342d026842f701b02d684a47552 *NEWS.md
+407c1c3ee0f0b7a81b6797ae48006a9d *NEWS.md
 ec607f029519caf0eb461a9f05825000 *R/RcppExports.R
 44a2a2143b6e7be94bd5eb756cd855a9 *R/as_rvine_structure.R
 9b6a21912ee2aca76218348c135b2e04 *R/bicop.R
@@ -75,7 +75,7 @@ d554837db0d9e877fa413d775e01cbb8 *inst/include/vinecopulib/misc/fit_controls.hpp
 2b7a6ab578d2d02dcebded7f087d9e38 *inst/include/vinecopulib/misc/implementation/tools_interpolation.ipp
 93140d223f490e40c8b64cd15a9617c2 *inst/include/vinecopulib/misc/implementation/tools_optimization.ipp
 ec5565d0da7e0e8e02b3151770c6a25f *inst/include/vinecopulib/misc/implementation/tools_stats.ipp
-c1c5a8b743c5929c1d177b6f6ca34647 *inst/include/vinecopulib/misc/nlohmann_json.hpp
+a697a06b6249e43b9d0f4815a6038fa2 *inst/include/vinecopulib/misc/nlohmann_json.hpp
 787481355953643d6fc2661798393775 *inst/include/vinecopulib/misc/tools_batch.hpp
 70f10aabf0aff47219c84c58d0e32775 *inst/include/vinecopulib/misc/tools_bobyqa.hpp
 fc7347266aee957dda08b9e5c26e50e1 *inst/include/vinecopulib/misc/tools_constants.hpp
